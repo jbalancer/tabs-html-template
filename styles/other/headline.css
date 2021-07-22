@@ -1,0 +1,183 @@
+body{
+/*Scroll horizontally during animation*/
+	overflow-x: hidden;
+}
+.tab-name{
+/*The parent of the title briefly describing the tabs below.*/
+	display: block;
+	width: 100%;
+	padding: 7px 0 7px 0;
+	box-sizing: border-box;
+	text-align: center;
+}
+.tab-name h1{
+/*Header font size*/
+	font-size: 24px;
+}
+.tab-borders{
+/*Color, top and bottom frame*/
+	border-top: 2px solid #D5D5E2;
+	border-bottom: 2px solid #D5D5E2;
+	color: #5B616F;
+}
+.tab-gradient{
+/*Background with gradient*/
+	background-image: linear-gradient(to right,rgb(102, 246, 255) 0%,rgb(221, 255, 244) 99.9%);
+}
+.dark-navy-background,
+.dark-red-background{
+/*The background color of the headers for tabs with a dark background*/
+	background-color: #3D3D3D;
+}
+.dark-navy-background{
+/*The font color of the header for taba with a dark blue background*/
+	color: #D7D6F7;
+}
+.dark-red-background{
+/*The font color of the header for taba with a dark red background*/
+	color: #F8CACA;
+}
+.tab-title{
+/*Preliminary short description of the tobacco*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	height: 100%;			
+	z-index: 100;
+	margin: 0;
+	padding: 0;	
+	transition: .3s .3s all;	
+}
+.tab-title > h1{
+/*Title for a preliminary short description of the tab*/
+	margin: 0;
+	padding: 30px 50px;			
+	font-size: 22px;			
+	border-radius: 5px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transition: .3s all ease-in-out;
+	transform: translate(-50%,-50%);
+}
+.new-tab-wrapper:hover > .tab-title > h1,
+.mob-tab-wrapper:hover > .tab-title > h1,
+.icon-tab-wrapper:hover > .tab-title > h1,
+.button-tab-wrapper:hover > .tab-title > h1{
+/*Styles for preview headers when hovering*/
+	left: calc(50% + 8px);
+	top: calc(50% + 8px);
+}
+.new-tab-wrapper:hover > .tab-title,
+.mob-tab-wrapper:hover > .tab-title,
+.icon-tab-wrapper:hover > .tab-title,
+.button-tab-wrapper:hover > .tab-title{
+/*Preview block styles, hover*/
+	opacity: 0;
+	z-index: -100;			
+}
+.tab-margin{
+/*Width and indent to the left*/
+	width: calc(100% + 8px);
+	left: -8px;
+}
+.tab-white > h1,
+.tab-alice-gradient > h1{
+/*Styles have a preview header (with background (gradient) by default)*/
+	box-shadow: 8px 8px 20px 4px #D5D5E2;
+	background-color: #fff;
+	color: #433D56;
+	border: 2px solid #D5D5E2;
+}
+.tab-once-gradient > h1{
+/*Shadow of the preview header (with background (gradient) when selected)*/
+	box-shadow: 8px 8px 20px 4px #A1FFE1;
+}
+.tab-white{
+/*Background without gradient at the preview block*/
+	background-color: rgba(255,255,255,.9);
+}
+.tab-alice-gradient{
+/*Background with gradient at preview block.*/
+	background-image: linear-gradient(to right,rgba(102, 246, 255, .9) 0%,rgba(221, 255, 244, .9) 100%);
+}
+.tab-dark-red{
+/*Background with a gradient at the preview block with a dark red background.*/
+	background-image: linear-gradient(to right,rgba(110, 1, 1, .9) 0%,rgba(255, 55, 55, .9) 100%);
+}
+.tab-navy-blue{
+/*Background with a gradient at the preview block with a dark blue background.*/
+	background-image: linear-gradient(to right,rgba(24, 0, 161, .9) 0%,rgba(90, 72, 255, .9) 100%);
+}
+.tab-dark-red > h1,
+.tab-navy-blue > h1{
+/*The background color and shadow of the preview header with a dark background*/
+	box-shadow: 8px 8px 20px 4px #303030;
+	background-color: #3D3D3D;
+}
+.tab-dark-red > h1{
+/*Color have preview header with dark red background*/
+	color: #F8CACA;
+}
+.tab-navy-blue > h1{
+/*Color have preview header with dark blue background*/
+	color: #D7D6F7;
+}
+.navy-blue > .tab-title,
+.dark-red > .tab-title,
+.alice-blue > .tab-title{
+/*The width and style of the frame in blocks for preview*/
+	border-width: 5px;
+	border-style: solid;
+}
+.navy-blue > .tab-title{
+/*The color of the frame and the shadow of the preview block with a dark blue background*/
+	border-color: #3F2AC1;
+	box-shadow: 0 0 10px #3F2AC1;
+}
+.dark-red > .tab-title{
+/*The color of the frame and the shadow of the preview block with a dark red background*/
+	border-color: #C13434;
+	box-shadow: 0 0 10px #C13434;
+}
+.alice-blue > .tab-title{
+/*The color of the frame and the shadow of the preview block with the background (gradient)*/
+	border-color: #7AF7FE;
+	box-shadow: 0 0 10px #7AF7FE;
+}
+.tab-white:hover > h1,
+.tab-alice-gradient:hover > h1{
+/*The shadow for the preview header with a background (gradient) and no default background when hovering.*/
+	box-shadow: -8px -8px 20px 4px #D5D5E2;
+}
+.tab-once-gradient:hover > h1{
+/*The shadow for the preview header with a background (gradient) after selecting, while hovering*/
+	box-shadow: -8px -8px 20px 4px #A1FFE1;
+}
+.dark-red:hover > .tab-title > h1,
+.navy-blue:hover > .tab-title > h1{
+/*Shadow for the header of the preview with a dark background, when you hover*/
+	box-shadow: -8px -8px 20px 4px #303030;
+}
+@media screen and (max-width: 650px) {
+/*Styles for devices with a screen size of less than 650px*/
+	.tab-title h1{
+	/*Styles have a header preview*/
+		white-space: nowrap;
+		padding: 17px 27px;
+		font-size: 18px;
+	}
+	.tab-name h1{
+	/*Styles title short description of the tabs below*/
+		padding: 5px 20px;
+		font-size: 20px;
+	}
+	.tab-title.tab-margin{
+	/*Width and height*/
+		width: 104%;
+		height: 102%;
+	}
+}

@@ -1,0 +1,119 @@
+/*===========================================*/
+/*	  	Adaptation for devices whose		 */
+/*	    screen width is less than 650px		 */
+/*===========================================*/
+@media screen and (max-width: 650px) {
+	.mob-tab-wrapper,
+	.icon-tab-wrapper{
+/*Mobile and Icon Tabs 90% of Screen Width*/
+		width: 90%;
+	}
+	.mob-tab-wrapper .tab-titles{
+/*Mobile Tab Header Height 55px*/
+		height: 55px;
+	}
+	.mob-tab-wrapper .tab-titles:before{
+/*Reducing the size of the plus icon in mobile tabs*/
+		width: 30px;
+		height: 30px;
+		left: calc(100% - 40px);
+		padding-top: 1px;
+	}
+	.mob-tab-wrapper .tab-titles *{
+/*Reducing the font and omissions in mobile tabs*/
+		font-size: 19px;
+		margin-top: -5px;
+		margin-left: 10px;
+	}
+	.mob-tab-wrapper .tab-titles i{
+/*Reducing the main icon in mobile tabs*/
+		width: 55px;
+		margin: 0;
+	}
+	.mob-tab-wrapper .tab-titles:after{
+/*Adjusting the size of the background (pseudo-element) for the main icon in mobile tabs*/
+		width: 55px;
+	}
+	.icon-tab-wrapper.without-frame .tab-titles{
+/*The size of the menu title without frame*/
+		height: 60px;
+		margin-top: 10px!important;
+		padding-top: 18px!important;
+	}
+	.icon-tab-wrapper.without-frame .content-discoverer:checked ~ .tab-titles{
+/*The size of the menu title without frame when selecting*/
+		height: 50px;
+		margin-top: 20px!important;
+		padding-top: 15px!important;
+	}
+	.icon-tab-wrapper.without-frame .tab-titles:before{
+/*Positioning pointers in tabs with icons(no frame)*/
+		top: -10%;
+		transform: translate(-50%,10%) rotate(45deg);
+	}
+	.icon-tab-wrapper.without-frame .content-discoverer:checked ~ .tab-titles:before{
+/*Position of the pointer when selecting an element in tabs with icons without a frame*/
+		top: -12%;
+		transform: translate(-50%,12%) rotate(45deg);
+	}
+	.icon-tab-wrapper .tab-titles *{
+/*Text size of headings in tabs with icons*/
+		font-size: 23px;
+	}
+	.icon-tab-wrapper.with-frame .content-discoverer:checked ~ .tab-titles{
+/*Size of menu titles when selecting tabs with icons (with frame)*/
+		margin-top: 20px;
+		padding-top: 13px;
+		height: 50px;
+	}
+	.icon-tab-wrapper.with-frame .tab-titles{
+/*Dimensions of menu titles in tabs with frame*/
+		height: 60px;
+		padding-top: 16px;
+		margin-top: 10px;
+	}
+	.icon-tab-wrapper.with-frame .tab-titles:before{
+/*Position of pointers in tabs with icons (with framess)*/
+		top: -10%!important;
+		transform: translate(-50%,10%) rotate(45deg)!important;
+	}
+	.icon-tab-wrapper.with-frame .content-discoverer:checked ~ .tab-titles:before{
+/*Position of pointers when selecting an element in tabs with icons having a frame*/
+		top: -15%!important;
+		transform: translate(-50%,15%) rotate(45deg)!important;
+	}
+	.button-tab-wrapper .tab-descriptions,
+	.new-tab-wrapper .tab-descriptions{
+/*Sizes and position of the block of descriptions of standard and push-button tabs*/
+		width: 100%;
+		max-height: 350px;
+		position: static;
+	}
+	.button-tab-wrapper .tab-titles,
+	.new-tab-wrapper .tab-titles{
+/*Alignment of standard and button tab menu headers*/
+		margin: 8px auto!important;
+	}
+	.button-tab-wrapper,
+	.new-tab-wrapper{
+/*Sizes and position of standard and button tabs*/
+		width: 90%;
+		height: auto;
+	}
+	.new-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*Full Width, reset bottom margin and frame when selecting an element in standard tabs*/
+		width: 100%;
+		border-bottom-color: transparent;
+		margin-bottom: 0!important;
+	}	
+	.new-tab-wrapper .tab-titles{
+/*Reset smooth transition for menu heading in standard tabs*/
+		transition: none;
+	}
+	.new-tab-wrapper .content-discoverer:checked ~ .tab-descriptions{
+/*Reset indent at the top, top frame and shadow of the block of descriptions of standard tabs*/
+		margin-top: -4px!important;
+		border-top: none;
+		box-shadow: none!important;
+	}		
+}

@@ -1,0 +1,124 @@
+.new-bg > .tab-content > .tab-descriptions,
+.new-bg > .tab-content > .tab-titles{
+/*-- The property of the framework for the block "descriptions" and "title" in the menu --*/
+
+	/*-- For Example --*/
+    border: 2px solid #D5D5E2;
+}
+.new-bg > .tab-content > .tab-titles{	
+/*-- Curvature of corners for menu heading --*/
+	
+	/*-- For Example --*/
+	border-radius: 3px;
+}
+.new-bg > .tab-content > .tab-titles *{
+/*-- The color of the contents of the title in the menu --*/
+
+	/*-- For Example --*/
+	color: #5B616F;
+}
+.new-bg > .tab-content > .tab-descriptions{
+/*-- Turning on scrolling and rounding corners - upper right and lower for the "descriptions" block --*/
+
+	/*-- For Example --*/
+	overflow: auto;
+	border-radius: 0 3px 3px 0;
+}
+.new-bg > .tab-content > .content-discoverer:checked ~ .tab-titles *{
+/*-- The content color of the title in the menu when selected --*/
+
+	/*-- For Example --*/
+	color: #433D56;
+}
+.new-bg > .tab-content > .tab-descriptions::-webkit-scrollbar,
+.new-bg .text::-webkit-scrollbar{
+/*-- Background scrolling block "descriptions" --*/
+
+	/*-- For Example --*/
+	background-color: #F1F1F1;
+}
+.new-bg > .tab-content > .tab-descriptions::-webkit-scrollbar-thumb,
+.new-bg .text::-webkit-scrollbar-thumb{
+/*-- Background slider on the scroll in the block "descriptions" --*/
+
+	/*-- For Example --*/
+	background-color: #C1C1C1;
+}
+.new-bg > .tab-content > .tab-titles:before{
+/*-- Frame color - bottom and right (in tabs with icons) --*/
+
+	/*-- For Example --*/
+    border-bottom-color: #D5D5E2;
+    border-right-color: #D5D5E2; 
+}
+.new-bg.mob-tab-wrapper .tab-titles{
+/*-- Internal padding on top in mobile tabs for menu title --*/
+
+	/*-- For Example --*/
+	padding-top: 20px;
+}
+.new-bg.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles:before{
+/*-- Setting the background and resetting the frame color for the plus and minus navigation elements in mobile tabs --*/
+
+	/*-- For Example --*/
+	background-color: #fff;
+	border-color: transparent;
+}
+.new-bg.mob-tab-wrapper .tab-titles:before{
+/*-- Color, borders and curvature of borders for the "plus and minus" navigation element in mobile tabs --*/
+
+	/*-- For Example --*/
+	color: #5B616F;
+	border: 2px solid #D5D5E2;
+	border-radius: 3px;
+}
+.new-bg.mob-tab-wrapper .tab-titles:after{
+/*-- The right and bottom frames, the height for the background at the icons in mobile tabs --*/
+
+	/*-- For Example --*/
+	border-right: 2px solid #D5D5E2;
+	border-bottom: 2px solid #D5D5E2;
+	height: calc(100% + 2px);
+}
+.new-bg.mob-tab-wrapper .tab-descriptions{
+/*-- Rounding the boundaries for the blocks of "descriptions" in mobile tabs --*/
+
+	/*-- For Example --*/
+    border-radius: 0 0 3px 3px!important;
+}
+.new-bg.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*-- Rounding borders at the menu heading in mobile tabs, when selecting --*/
+
+	/*-- For Example --*/
+    border-radius: 3px 3px 0 0;
+}
+.new-bg.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles:after{
+/*-- Rounding the lower right border at the background of the icons when selecting in mobile tabs --*/
+
+	/*-- For Example --*/
+    border-radius: 0 0 3px 0;
+}
+.new-bg.button-tab-wrapper .tab-descriptions{
+/*-- Linear gradient at blocks of "descriptions", in push-button tabs --*/
+
+	/*-- For Example --*/
+    background-image: linear-gradient(to right,rgb(255, 255, 255) 0%,rgb(245, 245, 254) 100%);
+}
+.new-bg.button-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*-- The effect of clicking with the shadow on the menu title, when selected, in the button tabs --*/
+
+	/*-- For Example --*/
+	box-shadow: inset 0 0 20px #D5D5E2;
+}
+.new-bg.button-tab-wrapper .tab-titles{
+/*-- The shadow of the menu headers in button tabs --*/
+
+	/*-- For Example --*/
+	box-shadow: 0 0 20px #D5D5E2;	
+}
+.new-bg.icon-tab-wrapper .tab-titles:before{
+/*-- White background for pointers in tabs with icons --*/
+
+	/*-- For Example --*/
+	background-color: #fff;
+}

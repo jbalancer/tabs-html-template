@@ -1,0 +1,1607 @@
+/*===========================================*/
+/*	  Setting the font and reset indents	 */
+/*===========================================*/
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+body{
+/*Setting the font on the entire document*/
+	font-family: 'Rubik', sans-serif;
+}
+body,
+.new-tab-wrapper .tab-titles *,
+.icon-tab-wrapper .tab-titles *,
+.button-tab-wrapper .tab-titles *,
+.mob-tab-wrapper .tab-titles *{
+/*Reset standard indents*/
+	margin: 0;
+	padding: 0;
+}
+.mob-tab-wrapper .tab-descriptions,
+.mob-tab-wrapper .tab-titles{
+/*Reset standard indents for column tabs*/
+	margin: 0;
+}
+/*===========================================*/
+/*Tabs display, hiding input and descriptions*/
+/*===========================================*/
+.tab-content,
+.new-tab-wrapper .tab-titles,
+.new-tab-wrapper,
+.icon-tab-wrapper,
+.icon-tab-wrapper .tab-titles,
+.mob-tab-wrapper .tab-titles,
+.icon-tab-wrapper .tab-titles:before,
+.mob-tab-wrapper,
+.mob-tab-wrapper .tab-titles:before,
+.mob-tab-wrapper .tab-titles:after,
+.button-tab-wrapper .tab-titles,
+.button-tab-wrapper{
+/*Setting the block display elements*/
+	display: block;
+}
+.tab-descriptions,
+.content-discoverer{
+/*Hiding input and unselected descriptions*/
+	display: none;
+}
+/*===========================================*/
+/*			  	Width of elements 	    	 */
+/*===========================================*/
+.new-tab-wrapper .tab-descriptions{
+/*Description block width*/
+	width: calc(100% - 200px);
+}
+.new-tab-wrapper .tab-titles,
+.button-tab-wrapper .tab-titles{
+/*Menu Header Width*/
+	width: 200px;
+}
+.new-tab-wrapper,
+.icon-tab-wrapper{
+/*Tab width with icons and standard tabs*/
+	width: 900px;
+}
+.icon-tab-wrapper .tab-descriptions,
+.mob-tab-wrapper .tab-descriptions,
+.mob-tab-wrapper .tab-titles{
+/*The width of the descriptions of the mobile, the standard tab and the header of the mobile tab*/
+	width: 100%;
+}
+.mob-tab-wrapper .tab-titles i,
+.mob-tab-wrapper .tab-titles:after{
+/*Width of pseudo-elements with background for icons*/
+	width: 70px;
+}
+.icon-tab-wrapper .tab-titles{
+/*Width of the menu title with a frame in tabs with icons*/
+	width: calc((100% / 5) + 2px);
+}
+.icon-tab-wrapper.with-frame .tab-content:first-child .tab-titles{
+/*Size 1 menu item in tabs with frame*/
+	width: calc(100% / 5);
+}
+.icon-tab-wrapper.without-frame .tab-titles{
+/*Width of the menu title without border in tabs with icons*/
+	width: calc(100% / 5);
+}
+.icon-tab-wrapper .tab-titles:before{
+/*Width of pointers in tabs with icons*/
+	width: 10px;
+}
+.mob-tab-wrapper,
+.new-tab-wrapper,
+.icon-tab-wrapper,
+.button-tab-wrapper{
+/*Maximum width of tabs*/
+	max-width: 90%;
+}
+.mob-tab-wrapper{
+/*Mobile Tab Width*/
+	width: 600px;	
+}
+.mob-tab-wrapper .tab-titles:before{
+/*The width of the "plus" mobile taba*/
+	width: 45px;
+}
+.button-tab-wrapper .tab-descriptions{
+/*Description block width in tabs with buttons*/
+	width: calc(100% - 215px);
+}
+.button-tab-wrapper{
+/*Tab width with buttons*/
+	width: 950px;
+}
+/*===========================================*/
+/*			  	Element height   	    	 */
+/*===========================================*/
+.new-tab-wrapper .tab-descriptions,
+.button-tab-wrapper .tab-descriptions{
+/*The height of the block descriptions of the standard and push-button tabs*/
+	height: 100%;	
+}
+.new-tab-wrapper .tab-titles{
+/*Maximum and minimum height of standard tabs*/
+	min-height: 46px;
+	max-height: auto;
+}
+.new-tab-wrapper,
+.icon-tab-wrapper,
+.button-tab-wrapper{
+/*Tab height: standard, push-button, with icons*/
+	height: 500px;
+}
+.icon-tab-wrapper .tab-descriptions{
+/*The height of the block descriptions tabs with icons*/
+	height: calc(100% - 68px);
+}
+.icon-tab-wrapper .tab-titles,
+.mob-tab-wrapper .tab-titles{
+/*Tab headers height with icons and mobile tabs*/
+	height: 70px;
+}
+.icon-tab-wrapper .tab-titles:before{
+/*The height of the pointer in tabs with icons*/
+	height: 10px;
+}
+.mob-tab-wrapper{
+/*Mobile Tab Height*/
+	height: auto;
+}
+.mob-tab-wrapper .tab-descriptions{
+/*Height of the block of descriptions of mobile tobacco*/
+	height: 0;
+	max-height: 300px;
+}
+.mob-tab-wrapper .tab-titles:before{
+/*The height of the "plus" in mobile tabs*/
+	height: 45px;
+}
+.button-tab-wrapper .tab-titles{
+/*Minimum and maximum height of the menu title in button tabs*/
+	min-height: 56px;
+	max-height: auto;
+}
+/*===========================================*/
+/*		Container size and text align 		 */
+/*===========================================*/
+.tab-descriptions,
+.tab-titles,
+.new-tab-wrapper,
+.icon-tab-wrapper,
+.mob-tab-wrapper,
+.tab-titles:before,
+.tab-titles i,
+.tab-titles:after,
+.button-tab-wrapper{
+/*The size is determined by the width and height and not the indents.*/
+	box-sizing: border-box;
+}
+.tab-titles{
+/*Center text in all menus*/
+	text-align: center;
+}
+/*===========================================*/
+/*				  Font size 				 */
+/*===========================================*/
+.new-tab-wrapper .tab-descriptions *,
+.button-tab-wrapper .tab-descriptions *,
+.button-tab-wrapper .tab-titles *,
+.new-tab-wrapper .tab-titles *{
+/*Font size in the description and menu items in button and standard tabs*/
+	font-size: 17px;
+}
+.icon-tab-wrapper .tab-titles *,
+.mob-tab-wrapper .tab-titles i{
+/*Size icons*/
+	font-size: 25px;
+}
+.mob-tab-wrapper .tab-titles:before{
+/*Font size plus in mobile tab*/
+	font-size: 18px;
+}
+.mob-tab-wrapper .tab-titles *{
+/*The font size of the contents of the menu in the mobile tab*/
+	font-size: 20px;
+}
+/*===========================================*/
+/*		External and internal indents 	 	 */
+/*===========================================*/
+.new-tab-wrapper,
+.icon-tab-wrapper,
+.mob-tab-wrapper,
+.button-tab-wrapper{
+/*Centering elements, indented from neighboring elements*/
+	margin: 50px auto; 
+}
+.new-tab-wrapper .tab-titles{
+/*Indentation to undo the wrapping of content with the frame of the parent and remove the upper outer indent*/
+	padding: 11px 20px;
+	margin-top: -2px;
+}
+.new-tab-wrapper .tab-content:first-child > .tab-titles,
+.mob-tab-wrapper > .tab-content:first-child > .tab-titles,
+.button-tab-wrapper .tab-content:first-child > .tab-titles{
+/*Remove the upper outer indent so that the element does not go beyond the frame*/
+	margin-top: 0;
+}
+.icon-tab-wrapper .tab-titles{
+/*Double frame indents*/
+	margin: 0 0 0 -2px;
+	padding-top: 20px;
+}
+.icon-tab-wrapper > .tab-content:first-child > .tab-titles{
+/*Remove left indent for the first menu item*/
+	margin-left: 0;
+}
+.mob-tab-wrapper .tab-titles{
+/*Strict upper outer indent*/
+	margin-top: 10px!important;		
+}
+.mob-tab-wrapper .tab-titles:before{
+/*Lower indentation to center content*/
+	padding-top: 7px;
+}
+.button-tab-wrapper .tab-titles{
+/*Button indentation for sticking and content centering*/
+	padding: 16px 20px!important;
+	margin-top: 8px;
+}
+/*===========================================*/
+/*				  Item type   		    	 */
+/*===========================================*/
+.new-tab-wrapper,
+.icon-tab-wrapper,
+.icon-tab-wrapper .tab-titles,
+.mob-tab-wrapper,
+.mob-tab-wrapper .tab-titles,
+.button-tab-wrapper{
+/*Positioning for children*/
+	position: relative;
+}
+.new-tab-wrapper .tab-descriptions,
+.icon-tab-wrapper .tab-descriptions,
+.icon-tab-wrapper .tab-titles:before,
+.mob-tab-wrapper .tab-descriptions,
+.mob-tab-wrapper .tab-titles:before,
+.mob-tab-wrapper .tab-titles i,
+.mob-tab-wrapper .tab-titles:after,
+.button-tab-wrapper .tab-descriptions{
+/*Absolute Positioning of the child relative to the parent*/
+	position: absolute;
+}
+/*===========================================*/
+/*    Distance for streamlined elements      */
+/*===========================================*/
+.new-tab-wrapper .tab-descriptions{
+/*Indent "description" to the left of the "menu items", to cancel wrapping*/
+	left: 198px;
+}
+.icon-tab-wrapper .tab-descriptions{
+/*Setting the position of the "description" down taba*/
+	bottom: 0;
+}
+.icon-tab-wrapper .tab-titles:before{
+/*Centering pointers for icon tabs*/
+	left: 50%;
+	top: -9%;
+}
+.new-tab-wrapper .tab-descriptions,
+.mob-tab-wrapper .tab-titles:after,
+.button-tab-wrapper .tab-descriptions{
+/*Clicking up the parent*/
+	top: 0;
+}
+.icon-tab-wrapper .tab-descriptions,
+.mob-tab-wrapper .tab-titles i,
+.mob-tab-wrapper .tab-titles:after{
+/*Clicking the elements to the left of the parent*/
+	left: 0;
+}
+.mob-tab-wrapper .tab-titles:before{
+/*Mobile background alignment*/
+	left: calc(100% - 55px);
+}
+.mob-tab-wrapper .tab-titles i,
+.mob-tab-wrapper .tab-titles:before{
+/*Alignment of the background and icons in the mobile tab*/
+	top: 50%;
+}
+.button-tab-wrapper .tab-descriptions{
+/*Retreat "description" of the buttons*/
+	left: 213px;
+}
+/*===========================================*/
+/*			Centering menu items         	 */
+/*===========================================*/
+.icon-tab-wrapper .tab-titles:before{
+/*Centering menu icons*/
+	transform: translate(-50%,9%);
+}
+.mob-tab-wrapper .tab-titles:before,
+.mob-tab-wrapper .tab-titles i{
+/*Alignment of heading elements - background and icons*/
+	transform: translate(0,-50%);
+}
+/*===========================================*/
+/*  Underline when hovering over menu items	 */
+/*===========================================*/
+.new-tab-wrapper .tab-titles:hover *,
+.button-tab-wrapper .tab-titles:hover *{
+/*Bottom underline of the title text when hovering*/
+    text-decoration: underline;
+}
+/*===========================================*/
+/*	    Transparency of tab elements 	     */
+/*===========================================*/
+.icon-tab-wrapper .tab-titles:before,
+.mob-tab-wrapper .tab-descriptions{
+/*Invisibility of elements before selecting a mobile tab and tab with icons*/
+	opacity: 0;
+}
+/*===========================================*/
+/*		   Type of menu item cursor      	 */
+/*===========================================*/
+.tab-titles{
+/*Pointer cursor for tabs menu*/
+	cursor: pointer;
+}
+/*===========================================*/
+/*		Setting frames and their rounding 	 */
+/*===========================================*/
+.icon-tab-wrapper .tab-titles:before{
+/*Assigning frames to the right and bottom for the menu background*/
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-right-width: 2px;
+	border-right-style: solid;
+}
+.mob-tab-wrapper .tab-descriptions{
+/*Strict removal of the top frame for tabs with icons*/
+	border-top: none!important;
+}
+.button-tab-wrapper .tab-descriptions{
+/*Strict frame removal for tabs with buttons*/
+	border: none!important;
+}
+.button-tab-wrapper .tab-titles{
+/*Strict purpose of rounding the frame for tabs with buttons*/
+	border-radius: 100px!important;
+}
+.icon-tab-wrapper.with-frame .tab-content:last-child .tab-titles{
+/*Reset rounding bottom right corner*/
+	border-radius: 3px 3px 0 0;
+}
+/*===========================================*/
+/*			    	 Layer     	     	     */
+/*===========================================*/
+.mob-tab-wrapper .tab-titles i{
+/*The topmost layer to overlap your background, which is set through the pseudo-element*/
+	z-index: 50;
+}
+.mob-tab-wrapper .tab-titles:after{
+/*The top layer to overlap your background, which is set by the parent to the full width*/
+	z-index: 5;
+}
+/*===========================================*/
+/*			 Pseudo-element content      	 */
+/*===========================================*/
+.icon-tab-wrapper .tab-titles:before,
+.mob-tab-wrapper .tab-titles:after{
+/*Empty content for tabs with icons and mobile tabs*/
+	content: '';
+}
+.mob-tab-wrapper .tab-titles:before{
+/*Icon "plus" in the mobile tab*/
+	content: '\271A';
+}
+/*===========================================*/
+/*			Wrapping letter-spacing     	 */
+/*===========================================*/
+.icon-tab-wrapper .tab-titles{
+/*Apply wrapping on the left for menu items with icons*/
+	float: left;
+	z-index: 10;
+}
+/*===========================================*/
+/*		 Styles when selecting tabs	 		 */
+/*===========================================*/
+.content-discoverer:checked ~ .tab-descriptions{
+/*Show description of selected title*/
+	display: block;
+}
+.new-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*Selecting the selected element by moving it to the right by 8px, so that the description does not blend with the menu item when increasing the element width*/
+	margin-left: -8px;
+	width: 208px;
+}
+.icon-tab-wrapper .content-discoverer:checked ~ .tab-titles:before{
+/*Arrow pointer on top of the selected header*/
+	opacity: 1;	
+	transform: translate(-50%,12%) rotate(45deg);
+	top: -12%;
+}
+.icon-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*The effect of clicking when choosing a title*/
+	height: 60px;
+	margin-top: 10px;
+	padding-top: 15px;
+}
+.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles:before{
+/*Show the minus to the right when selecting an item*/
+	content: '\2013';
+	border-color: transparent;
+	font-size: 20px;
+}
+.mob-tab-wrapper .content-discoverer:checked ~ .tab-descriptions{
+/*Show description of selected item*/
+	position: static;
+	height: auto;
+	opacity: 1;
+}
+/*===========================================*/
+/*Setting and resetting scrolling parameters */
+/*===========================================*/
+body::-webkit-scrollbar{
+/*Page scroll color*/
+	width: 5px;
+	height: 5px;
+	background-color: #F9F9FF;
+}
+body::-webkit-scrollbar-thumb{
+/*Page scroll slider color*/
+	background-color: #DDDDE7;
+}
+.tab-descriptions{
+/*Allow scrolling*/
+	overflow: auto;
+}
+.tab-descriptions::-webkit-scrollbar,
+.text::-webkit-scrollbar{
+/*Setting the width and height of the scroll slider*/
+	width: 5px;
+	height: 5px;
+}
+.tab-descriptions::-webkit-scrollbar-button,
+.text::-webkit-scrollbar-button{
+/*Hiding scroll arrows*/
+	width: 0;
+	height: 0;
+}
+/*===========================================*/
+/*	   			Smooth transition			 */
+/*===========================================*/
+.tab-titles,
+.tab-descriptions{
+/*Setting a smooth transition for menu items and descriptions*/
+	transition: 250ms all ease-in-out;
+}
+.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*Removing a smooth transition so that there are no bugs during reverse animation*/
+	transition: none;
+}
+/*===========================================*/
+/*	  	Adaptation for devices whose		 */
+/*	    screen width is less than 650px		 */
+/*===========================================*/
+@media screen and (max-width: 650px) {
+	.mob-tab-wrapper,
+	.icon-tab-wrapper{
+/*Mobile and Icon Tabs 90% of Screen Width*/
+		width: 90%;
+	}
+	.mob-tab-wrapper .tab-titles{
+/*Mobile Tab Header Height 55px*/
+		height: 55px;
+	}
+	.mob-tab-wrapper .tab-titles:before{
+/*Reducing the size of the plus icon in mobile tabs*/
+		width: 30px;
+		height: 30px;
+		left: calc(100% - 40px);
+		padding-top: 1px;
+	}
+	.mob-tab-wrapper .tab-titles *{
+/*Reducing the font and omissions in mobile tabs*/
+		font-size: 19px;
+		margin-top: -5px;
+		margin-left: 10px;
+	}
+	.mob-tab-wrapper .tab-titles i{
+/*Reducing the main icon in mobile tabs*/
+		width: 55px;
+		margin: 0;
+	}
+	.mob-tab-wrapper .tab-titles:after{
+/*Adjusting the size of the background (pseudo-element) for the main icon in mobile tabs*/
+		width: 55px;
+	}
+	.icon-tab-wrapper.without-frame .tab-titles{
+/*The size of the menu title without frame*/
+		height: 60px;
+		margin-top: 10px!important;
+		padding-top: 18px!important;
+	}
+	.icon-tab-wrapper.without-frame .content-discoverer:checked ~ .tab-titles{
+/*The size of the menu title without frame when selecting*/
+		height: 50px;
+		margin-top: 20px!important;
+		padding-top: 15px!important;
+	}
+	.icon-tab-wrapper.without-frame .tab-titles:before{
+/*Positioning pointers in tabs with icons(no frame)*/
+		top: -10%;
+		transform: translate(-50%,10%) rotate(45deg);
+	}
+	.icon-tab-wrapper.without-frame .content-discoverer:checked ~ .tab-titles:before{
+/*Position of the pointer when selecting an element in tabs with icons without a frame*/
+		top: -12%;
+		transform: translate(-50%,12%) rotate(45deg);
+	}
+	.icon-tab-wrapper .tab-titles *{
+/*Text size of headings in tabs with icons*/
+		font-size: 23px;
+	}
+	.icon-tab-wrapper.with-frame .content-discoverer:checked ~ .tab-titles{
+/*Size of menu titles when selecting tabs with icons (with frame)*/
+		margin-top: 20px;
+		padding-top: 13px;
+		height: 50px;
+	}
+	.icon-tab-wrapper.with-frame .tab-titles{
+/*Dimensions of menu titles in tabs with frame*/
+		height: 60px;
+		padding-top: 16px;
+		margin-top: 10px;
+	}
+	.icon-tab-wrapper.with-frame .tab-titles:before{
+/*Position of pointers in tabs with icons (with framess)*/
+		top: -10%!important;
+		transform: translate(-50%,10%) rotate(45deg)!important;
+	}
+	.icon-tab-wrapper.with-frame .content-discoverer:checked ~ .tab-titles:before{
+/*Position of pointers when selecting an element in tabs with icons having a frame*/
+		top: -15%!important;
+		transform: translate(-50%,15%) rotate(45deg)!important;
+	}
+	.button-tab-wrapper .tab-descriptions,
+	.new-tab-wrapper .tab-descriptions{
+/*Sizes and position of the block of descriptions of standard and push-button tabs*/
+		width: 100%;
+		max-height: 350px;
+		position: static;
+	}
+	.button-tab-wrapper .tab-titles,
+	.new-tab-wrapper .tab-titles{
+/*Alignment of standard and button tab menu headers*/
+		margin: 8px auto!important;
+	}
+	.button-tab-wrapper,
+	.new-tab-wrapper{
+/*Sizes and position of standard and button tabs*/
+		width: 90%;
+		height: auto;
+	}
+	.new-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*Full Width, reset bottom margin and frame when selecting an element in standard tabs*/
+		width: 100%;
+		border-bottom-color: transparent;
+		margin-bottom: 0!important;
+	}	
+	.new-tab-wrapper .tab-titles{
+/*Reset smooth transition for menu heading in standard tabs*/
+		transition: none;
+	}
+	.new-tab-wrapper .content-discoverer:checked ~ .tab-descriptions{
+/*Reset indent at the top, top frame and shadow of the block of descriptions of standard tabs*/
+		margin-top: -4px!important;
+		border-top: none;
+		box-shadow: none!important;
+	}		
+}
+.without-bg > .tab-content > .tab-descriptions,
+.without-bg > .tab-content > .tab-titles{
+/*-- The property of the framework for the block "descriptions" and "title" in the menu --*/
+
+    border: 2px solid #D5D5E2;
+}
+.without-bg > .tab-content > .tab-titles{	
+/*-- Curvature of corners for menu heading --*/
+
+	border-radius: 3px;
+}
+.without-bg > .tab-content > .tab-titles *{
+/*-- The color of the contents of the title in the menu --*/
+
+	color: #5B616F;
+}
+.without-bg > .tab-content > .tab-descriptions{
+/*-- Turning on scrolling and rounding corners - upper right and lower for the "descriptions" block --*/
+
+	overflow: auto;
+	border-radius: 0 3px 3px 0;
+}
+.without-bg > .tab-content > .content-discoverer:checked ~ .tab-titles *{
+/*-- The content color of the title in the menu when selected --*/
+
+	color: #433D56;
+}
+.without-bg > .tab-content > .tab-descriptions::-webkit-scrollbar,
+.without-bg .text::-webkit-scrollbar{
+/*-- Background scrolling block "descriptions" --*/
+
+	background-color: #F1F1F1;
+}
+.without-bg > .tab-content > .tab-descriptions::-webkit-scrollbar-thumb,
+.without-bg .text::-webkit-scrollbar-thumb{
+/*-- Background slider on the scroll in the block "descriptions" --*/
+
+	background-color: #C1C1C1;
+}
+.without-bg > .tab-content > .tab-titles:before{
+/*-- Frame color - bottom and right (in tabs with icons) --*/
+
+    border-bottom-color: #D5D5E2;
+    border-right-color: #D5D5E2; 
+}
+.without-bg.mob-tab-wrapper .tab-titles{
+/*-- Internal padding on top in mobile tabs for menu title --*/
+
+	padding-top: 20px;
+}
+.without-bg.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles:before{
+/*-- Setting the background and resetting the frame color for the plus and minus navigation elements in mobile tabs --*/
+
+	background-color: #fff;
+	border-color: transparent;
+}
+.without-bg.mob-tab-wrapper .tab-titles:before{
+/*-- Color, borders and curvature of borders for the "plus and minus" navigation element in mobile tabs --*/
+
+	color: #5B616F;
+	border: 2px solid #D5D5E2;
+	border-radius: 3px;
+}
+.without-bg.mob-tab-wrapper .tab-titles:after{
+/*-- The right and bottom frames, the height for the background at the icons in mobile tabs --*/
+
+	border-right: 2px solid #D5D5E2;
+	border-bottom: 2px solid #D5D5E2;
+	height: calc(100% + 2px);
+}
+.without-bg.mob-tab-wrapper .tab-descriptions{
+/*-- Rounding the boundaries for the blocks of "descriptions" in mobile tabs --*/
+
+    border-radius: 0 0 3px 3px!important;
+}
+.without-bg.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*-- Rounding borders at the menu heading in mobile tabs, when selecting --*/
+
+    border-radius: 3px 3px 0 0;
+}
+.without-bg.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles:after{
+/*-- Rounding the lower right border at the background of the icons when selecting in mobile tabs --*/
+
+    border-radius: 0 0 3px 0;
+}
+.without-bg.button-tab-wrapper .tab-descriptions{
+/*-- Linear gradient at blocks of "descriptions", in push-button tabs --*/
+
+    background-image: linear-gradient(to right,rgb(255, 255, 255) 0%,rgb(245, 245, 254) 100%);
+}
+.without-bg.button-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*-- The effect of clicking with the shadow on the menu title, when selected, in the button tabs --*/
+
+	box-shadow: inset 0 0 20px #D5D5E2;
+}
+.without-bg.button-tab-wrapper .tab-titles{
+/*-- The shadow of the menu headers in button tabs --*/
+
+	box-shadow: 0 0 20px #D5D5E2;	
+}
+.icon-tab-wrapper .tab-titles:before{
+/*-- White background for pointers in tabs with icons --*/
+
+	background-color: #fff;
+}
+.alice-blue > .tab-content > .tab-titles *,
+.alice-blue-once > .tab-content > .tab-titles *{
+/*-- The color of the contents of the menu headers --*/
+
+	color: #5B616F;
+}
+.alice-blue > .tab-content > .tab-descriptions::-webkit-scrollbar,
+.alice-blue .text::-webkit-scrollbar,
+.alice-blue-once > .tab-content > .tab-descriptions::-webkit-scrollbar{
+/*-- Scroll background for "descriptions" blocks --*/
+
+	background-color: transparent;
+}
+.alice-blue > .tab-content > .tab-descriptions::-webkit-scrollbar-thumb,
+.alice-blue .text::-webkit-scrollbar-thumb,
+.alice-blue-once > .tab-content > .tab-descriptions::-webkit-scrollbar-thumb{
+/*-- Background slider on the scroll for blocks "descriptions" --*/
+
+	background-color: #D5D5E2;
+}
+.alice-blue > .tab-content > .tab-descriptions,
+.alice-blue-once > .tab-content > .tab-descriptions,
+.alice-blue > .tab-content > .tab-titles,
+.alice-blue-once > .tab-content > .tab-titles{
+/*-- Frames for menu titles and "description" blocks --*/
+
+    border: 2px solid #D5D5E2;    
+}
+.alice-blue > .tab-content > .tab-titles,
+.alice-blue-once > .tab-content > .tab-titles{
+/*-- Round border at menu headers --*/
+
+    border-radius: 3px;
+}
+.alice-blue > .tab-content > .tab-descriptions,
+.alice-blue-once > .tab-content > .tab-descriptions{
+/*-- Rounding the border and setting a scroll for the blocks of "descriptions" --*/
+
+    border-radius: 0 3px 3px 0;
+    overflow: auto;
+}
+.alice-blue-once > .tab-content > .content-discoverer:checked ~ .tab-titles,
+.alice-blue > .tab-content > .tab-titles{
+/*-- Linear gradient for the background of the menu headers when choosing and for those that are not selected --*/
+
+    background-image: linear-gradient(to right,rgb(102, 246, 255) 0%,rgb(221, 255, 244) 100%);
+}
+.alice-blue > .tab-content > .content-discoverer:checked ~ .tab-titles *,
+.alice-blue-once > .tab-content > .content-discoverer:checked ~ .tab-titles *{
+/*-- The font color of the contents of the menu headers when selecting --*/
+
+	color: #433D56;
+}
+.alice-blue > .tab-content > .content-discoverer:checked ~ .tab-titles{
+/*-- Reset the background with a gradient and set a solid background for the menu title when you select --*/
+
+	background-image: none;
+	background-color: #fff;
+}
+.alice-blue:hover > .tab-content > .tab-descriptions,
+.alice-blue-once:hover > .tab-content > .tab-descriptions{
+/*-- The shadow of the blocks "descriptions" when you hover --*/
+
+    box-shadow: 2px 2px 12px #D5D5E2;
+}
+.alice-blue > .tab-content > .tab-titles:before,
+.alice-blue-once > .tab-content > .tab-titles:before{
+/*-- Bottom and right borders of pointers menu title --*/
+
+    border-bottom-color: #D5D5E2;
+    border-right-color: #D5D5E2; 
+}
+.alice-blue.mob-tab-wrapper .tab-titles,
+.alice-blue-once.mob-tab-wrapper .tab-titles{
+/*-- Internal top indent of the menu title. --*/
+
+    padding-top: 21px;
+}
+.alice-blue.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles:before{
+/*-- Reset the frame and background of the elements for navigation "plus and minus" in mobile tabs --*/
+
+    background-color: transparent;
+    border-color: transparent;
+}
+.alice-blue.mob-tab-wrapper .tab-titles:before{
+/*-- Color, frame, rounded borders, shadow, background for the elements for navigation "plus and minus" in mobile tabs --*/
+
+    color: #5B616F;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 15px #fff;
+    background-color: #fff;
+}
+.alice-blue.mob-tab-wrapper .tab-titles:after,
+.alice-blue-once.mob-tab-wrapper .tab-titles:after{
+/*-- Background, bottom and right frame, height for backgrounds in mobile tabs icons --*/
+
+    background-color: #fff;
+    border-right: 2px solid #D5D5E2;
+    border-bottom: 2px solid #D5D5E2;
+    height: calc(100% + 2px);
+}
+.alice-blue-once.mob-tab-wrapper .tab-titles:before{
+/*-- Color, frame, rounded borders, background for the elements for navigation "plus and minus" in mobile tabs --*/
+
+    border: 2px solid #D5D5E2;
+    color: #5B616F;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.alice-blue-once.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles:before{
+/*-- The frame and the shadow when you select the elements for navigation, "plus and minus" in mobile tabs --*/
+
+    border: 2px solid #fff;    
+    box-shadow: 0 0 15px #fff;    
+}
+.alice-blue.mob-tab-wrapper .tab-descriptions,
+.alice-blue-once.mob-tab-wrapper .tab-descriptions{
+/*-- Strictly rounding the borders and dumping the shadow for the blocks of "descriptions" in mobile tabs --*/
+
+    border-radius: 0 0 3px 3px!important;
+    box-shadow: none!important;
+}
+.alice-blue.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles,
+.alice-blue-once.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*-- Rounding the borders of the menu heading when choosing, in mobile tabs --*/
+
+    border-radius: 3px 3px 0 0;
+}
+.alice-blue.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles:after{
+/*-- The rounding of the background borders of the icons for the selected menu title in mobile tabs --*/
+
+    border-radius: 0 0 3px 0;
+}
+.alice-blue-once.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles:after{
+/*-- The rounding of the background borders of the icons for the selected menu title in mobile tabs --*/
+    border-radius: 0;
+}
+.alice-blue.button-tab-wrapper .tab-descriptions{
+/*-- Linear gradient background for the block of "descriptions" in button tabs --*/
+
+    background-image: linear-gradient(to right,rgb(255, 255, 255) 0%,rgb(214, 254, 244) 100%);
+}
+.button-tab-wrapper:hover > .tab-content > .tab-descriptions,
+.alice-blue-once.button-tab-wrapper .tab-descriptions{
+/*-- Drop shadows for the block "descriptions" in button tabs --*/
+
+    box-shadow: none;
+}
+.alice-blue.button-tab-wrapper .content-discoverer:checked ~ .tab-titles,
+.alice-blue-once.button-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*-- The effect of clicking with the shadow when selecting the menu title in the button tabs --*/
+
+    box-shadow: inset 0 0 25px #D5D5E2;
+}
+.alice-blue.button-tab-wrapper .tab-titles,
+.alice-blue-once.button-tab-wrapper .tab-titles{
+/*-- Shadow menu title in button tabs --*/
+
+    box-shadow: 0 0 20px #D5D5E2;
+}
+.alice-blue-once.button-tab-wrapper .tab-descriptions{
+/*-- Reset the frame and set the background with a linear gradient for the block "descriptions" in the button tabs --*/
+
+    border: none;
+    background-image: linear-gradient(to right,rgb(255, 255, 255) 0%,rgb(215, 255, 250) 100%);
+}
+.icon-tab-wrapper .tab-titles:before{
+/*-- White background at pointers in tabs with icons --*/
+
+    background-color: #fff;
+}
+.dark-red > .tab-content > .tab-titles *{
+/*-- The font color of the contents of the menu header --*/
+
+	color: #F8CACA;
+}
+.dark-red > .tab-content > .tab-descriptions::-webkit-scrollbar,
+.dark-red .text::-webkit-scrollbar{
+/*-- Scroll background color for "description" blocks --*/
+
+	background-color: transparent;
+}
+.dark-red > .tab-content > .tab-descriptions::-webkit-scrollbar-thumb,
+.dark-red .text::-webkit-scrollbar-thumb{
+/*-- The color of the slider in the blocks "descriptions" --*/
+
+	background-color: #FF3737;
+}
+.dark-red > .tab-content > .tab-descriptions{
+/*-- Setting the scroll and background for the blocks "descriptions" --*/
+
+    overflow: auto;
+    background-color: #3D3D3D;
+}
+.dark-red > .tab-content > .tab-descriptions *{
+/*-- The shadow of the text and the font color of the contents of the blocks of "descriptions" --*/
+
+    text-shadow: 0 0 1px #F8CACA;
+    color: #fff;
+}
+.dark-red > .tab-content > .content-discoverer:checked ~ .tab-titles *{
+/*-- The font color of the contents of the menu title when selected --*/
+
+    color: #fff;
+}
+.dark-red > .tab-content > .content-discoverer:checked ~ .tab-titles{
+/*-- Background color, linear gradient of the menu header when selected --*/
+
+    background-color: #FF3737;
+    background-image: linear-gradient(to right,rgb(110, 1, 1) 0%,rgb(255, 55, 55) 100%);
+}
+.dark-red > .tab-content > .tab-titles{
+/*-- Default background color, reset external indents and set the internal upper indent for the menu title --*/
+
+    background-color: #303030;
+    margin: 0;
+    padding-top: 13px;
+}
+.dark-red.icon-tab-wrapper > .tab-content > .tab-titles:before{
+/*-- White background of the right and lower boundaries of pointers in tabs with icons --*/
+
+    border-bottom-color: #fff;
+    border-right-color: #fff; 
+}
+.dark-red.mob-tab-wrapper .tab-titles{
+/*-- Upper indent and background color for menu heading, in mobile tabs --*/
+
+    background-color: #3D3D3D;
+    padding-top: 23px;
+}
+.dark-red.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles:before{
+/*-- The color of the navigation elements "plus and minus" when selected in mobile tabs --*/
+
+    color: #fff;
+}
+.dark-red.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles:after{
+/*-- Reset the background rounding of icons when selecting, in mobile tabs --*/
+
+    border-radius: 0;
+}
+.dark-red.mob-tab-wrapper .tab-titles:before{
+/*-- Font color, frame, rounding, and background of the plus and minus navigation elements in mobile tabs --*/
+
+    color: #F8CACA;
+    border: 2px solid #303030;
+    border-radius: 0;
+    background-color: #303030;
+}
+.dark-red.mob-tab-wrapper .tab-titles:after{
+/*-- Right and bottom borders, background color and height of the background for icons, in mobile tabs --*/
+
+    border-right: 2px solid #303030;
+    border-bottom: 2px solid #303030;
+    background-color: #303030;
+    height: 100%;
+}
+.dark-red.mob-tab-wrapper .tab-descriptions{
+/*-- Reset rounding at the block of "descriptions" in mobile tabs --*/
+
+    border-radius: 0;
+}
+.dark-red.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*-- Reset rounding at menu headers when selected, in mobile tabs --*/
+
+    border-radius: 0;
+}
+.dark-red.button-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*-- The effect of clicking with the shadow and the border color of the menu headers when selecting --*/
+
+    box-shadow: inset -2px 0 25px rgba(61,61,61,.4);
+    border-color: #fff;
+}
+.dark-red.button-tab-wrapper .tab-titles{
+/*-- Upper outer indent, shadow and borders of the menu title in button tabs --*/
+
+    margin-top: 8px;
+    box-shadow: 0 0 20px #3D3D3D;
+    border: 2px solid #DA8787;
+}
+.dark-red.icon-tab-wrapper > .tab-content > .tab-titles{
+/*-- Top indentation of the menu headings in tabs with icons --*/
+
+    padding-top: 21px;
+}
+.dark-red.icon-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*-- Top indentation of menu headers when selected, in tabs with icons --*/
+
+    padding-top: 18px;
+}
+.icon-tab-wrapper .tab-titles:before{
+/*-- Background color of pointers for menu headings in tabs with icons --*/
+
+    background-color: #fff;
+}
+.navy-blue > .tab-content > .tab-titles *{
+/*-- The font color of the contents of the menu header --*/
+
+	color: #D7D6F7;
+}
+.navy-blue > .tab-content > .tab-descriptions::-webkit-scrollbar,
+.navy-blue .text::-webkit-scrollbar{
+/*-- Scroll background color for "description" blocks --*/
+
+	background-color: transparent;
+}
+.navy-blue > .tab-content > .tab-descriptions::-webkit-scrollbar-thumb,
+.navy-blue .text::-webkit-scrollbar-thumb{
+/*-- The color of the slider in the blocks "descriptions" --*/
+
+	background-color: #5341F5;
+}
+.navy-blue > .tab-content > .tab-descriptions{
+/*-- Setting the scroll and background for the blocks "descriptions" --*/
+
+    overflow: auto;
+    background-color: #3D3D3D;
+}
+.navy-blue > .tab-content > .tab-descriptions *{
+/*-- The shadow of the text and the font color of the contents of the blocks of "descriptions" --*/
+
+    text-shadow: 0 0 1px #7976C9; 
+    color: #FFFFFF;      
+}
+.navy-blue > .tab-content > .content-discoverer:checked ~ .tab-titles *{
+/*-- The font color of the contents of the menu title when selected --*/
+
+    color: #fff;
+}
+.navy-blue > .tab-content > .content-discoverer:checked ~ .tab-titles{
+/*-- Background color, linear gradient of the menu header when selected --*/
+
+    background-color: #5A48FF;
+    background-image: linear-gradient(to right,rgb(24, 0, 161) 0%,rgb(90, 72, 255) 100%);
+}
+.navy-blue > .tab-content > .tab-titles{
+/*-- Default background color, reset external indents and set the internal upper indent for the menu title --*/
+
+    background-color: #303030;
+    margin: 0;
+    padding-top: 13px;
+}
+.navy-blue.icon-tab-wrapper > .tab-content > .tab-titles:before{
+/*-- White background of the right and lower boundaries of pointers in tabs with icons --*/
+
+    border-bottom-color: #fff;
+    border-right-color: #fff; 
+}
+.navy-blue.mob-tab-wrapper .tab-titles{
+/*-- Upper indent and background color for menu heading, in mobile tabs --*/
+
+    background-color: #3D3D3D;
+    padding-top: 23px;
+}
+.navy-blue.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles:before{
+/*-- The color of the navigation elements "plus and minus" when selected in mobile tabs --*/
+
+    color: #fff;
+}
+.navy-blue.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles:after{
+/*-- Reset the background rounding of icons when selecting, in mobile tabs --*/
+
+    border-radius: 0;
+}
+.navy-blue.mob-tab-wrapper .tab-titles:before{
+/*-- Font color, frame, rounding, and background of the plus and minus navigation elements in mobile tabs --*/
+
+    color: #D7D6F7;
+    border: 2px solid #303030;
+    border-radius: 0;
+    background-color: #303030;
+}
+.navy-blue.mob-tab-wrapper .tab-titles:after{
+/*-- Right and bottom borders, background color and height of the background for icons, in mobile tabs --*/
+
+    border-right: 2px solid #303030;
+    border-bottom: 2px solid #303030;
+    background-color: #303030;
+    height: 100%;
+}
+.navy-blue.mob-tab-wrapper .tab-descriptions{
+/*-- Reset rounding at the block of "descriptions" in mobile tabs --*/
+
+    border-radius: 0;
+}
+.navy-blue.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*-- Reset rounding at menu headers when selected, in mobile tabs --*/
+
+    border-radius: 0;
+}
+.navy-blue.button-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*-- The effect of clicking with the shadow and the border color of the menu headers when selecting --*/
+
+    box-shadow: inset -2px 0 25px rgba(61,61,61,.4);
+    border-color: #fff;
+}
+.navy-blue.button-tab-wrapper .tab-titles{
+/*-- Upper outer indent, shadow and borders of the menu title in button tabs --*/
+
+    margin-top: 8px;
+    box-shadow: 0 0 20px #3D3D3D;
+    border: 2px solid #BBB5F1;
+}
+.navy-blue.icon-tab-wrapper > .tab-content > .tab-titles{
+/*-- Top indentation of the menu headings in tabs with icons --*/
+
+    padding-top: 21px;
+}
+.navy-blue.icon-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*-- Top indentation of menu headers when selected, in tabs with icons --*/
+
+    padding-top: 18px;
+}
+.icon-tab-wrapper .tab-titles:before{
+/*-- Background color of pointers for menu headings in tabs with icons --*/
+
+    background-color: #fff;
+}
+body{
+/*Scroll horizontally during animation*/
+	overflow-x: hidden;
+}
+.tab-name{
+/*The parent of the title briefly describing the tabs below.*/
+	display: block;
+	width: 100%;
+	padding: 7px 0 7px 0;
+	box-sizing: border-box;
+	text-align: center;
+}
+.tab-name h1{
+/*Header font size*/
+	font-size: 24px;
+}
+.tab-borders{
+/*Color, top and bottom frame*/
+	border-top: 2px solid #D5D5E2;
+	border-bottom: 2px solid #D5D5E2;
+	color: #5B616F;
+}
+.tab-gradient{
+/*Background with gradient*/
+	background-image: linear-gradient(to right,rgb(102, 246, 255) 0%,rgb(221, 255, 244) 99.9%);
+}
+.dark-navy-background,
+.dark-red-background{
+/*The background color of the headers for tabs with a dark background*/
+	background-color: #3D3D3D;
+}
+.dark-navy-background{
+/*The font color of the header for taba with a dark blue background*/
+	color: #D7D6F7;
+}
+.dark-red-background{
+/*The font color of the header for taba with a dark red background*/
+	color: #F8CACA;
+}
+.tab-title{
+/*Preliminary short description of the tobacco*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	height: 100%;			
+	z-index: 100;
+	margin: 0;
+	padding: 0;	
+	transition: .3s .3s all;	
+}
+.tab-title > h1{
+/*Title for a preliminary short description of the tab*/
+	margin: 0;
+	padding: 30px 50px;			
+	font-size: 22px;			
+	border-radius: 5px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transition: .3s all ease-in-out;
+	transform: translate(-50%,-50%);
+}
+.new-tab-wrapper:hover > .tab-title > h1,
+.mob-tab-wrapper:hover > .tab-title > h1,
+.icon-tab-wrapper:hover > .tab-title > h1,
+.button-tab-wrapper:hover > .tab-title > h1{
+/*Styles for preview headers when hovering*/
+	left: calc(50% + 8px);
+	top: calc(50% + 8px);
+}
+.new-tab-wrapper:hover > .tab-title,
+.mob-tab-wrapper:hover > .tab-title,
+.icon-tab-wrapper:hover > .tab-title,
+.button-tab-wrapper:hover > .tab-title{
+/*Preview block styles, hover*/
+	opacity: 0;
+	z-index: -100;			
+}
+.tab-margin{
+/*Width and indent to the left*/
+	width: calc(100% + 8px);
+	left: -8px;
+}
+.tab-white > h1,
+.tab-alice-gradient > h1{
+/*Styles have a preview header (with background (gradient) by default)*/
+	box-shadow: 8px 8px 20px 4px #D5D5E2;
+	background-color: #fff;
+	color: #433D56;
+	border: 2px solid #D5D5E2;
+}
+.tab-once-gradient > h1{
+/*Shadow of the preview header (with background (gradient) when selected)*/
+	box-shadow: 8px 8px 20px 4px #A1FFE1;
+}
+.tab-white{
+/*Background without gradient at the preview block*/
+	background-color: rgba(255,255,255,.9);
+}
+.tab-alice-gradient{
+/*Background with gradient at preview block.*/
+	background-image: linear-gradient(to right,rgba(102, 246, 255, .9) 0%,rgba(221, 255, 244, .9) 100%);
+}
+.tab-dark-red{
+/*Background with a gradient at the preview block with a dark red background.*/
+	background-image: linear-gradient(to right,rgba(110, 1, 1, .9) 0%,rgba(255, 55, 55, .9) 100%);
+}
+.tab-navy-blue{
+/*Background with a gradient at the preview block with a dark blue background.*/
+	background-image: linear-gradient(to right,rgba(24, 0, 161, .9) 0%,rgba(90, 72, 255, .9) 100%);
+}
+.tab-dark-red > h1,
+.tab-navy-blue > h1{
+/*The background color and shadow of the preview header with a dark background*/
+	box-shadow: 8px 8px 20px 4px #303030;
+	background-color: #3D3D3D;
+}
+.tab-dark-red > h1{
+/*Color have preview header with dark red background*/
+	color: #F8CACA;
+}
+.tab-navy-blue > h1{
+/*Color have preview header with dark blue background*/
+	color: #D7D6F7;
+}
+.navy-blue > .tab-title,
+.dark-red > .tab-title,
+.alice-blue > .tab-title{
+/*The width and style of the frame in blocks for preview*/
+	border-width: 5px;
+	border-style: solid;
+}
+.navy-blue > .tab-title{
+/*The color of the frame and the shadow of the preview block with a dark blue background*/
+	border-color: #3F2AC1;
+	box-shadow: 0 0 10px #3F2AC1;
+}
+.dark-red > .tab-title{
+/*The color of the frame and the shadow of the preview block with a dark red background*/
+	border-color: #C13434;
+	box-shadow: 0 0 10px #C13434;
+}
+.alice-blue > .tab-title{
+/*The color of the frame and the shadow of the preview block with the background (gradient)*/
+	border-color: #7AF7FE;
+	box-shadow: 0 0 10px #7AF7FE;
+}
+.tab-white:hover > h1,
+.tab-alice-gradient:hover > h1{
+/*The shadow for the preview header with a background (gradient) and no default background when hovering.*/
+	box-shadow: -8px -8px 20px 4px #D5D5E2;
+}
+.tab-once-gradient:hover > h1{
+/*The shadow for the preview header with a background (gradient) after selecting, while hovering*/
+	box-shadow: -8px -8px 20px 4px #A1FFE1;
+}
+.dark-red:hover > .tab-title > h1,
+.navy-blue:hover > .tab-title > h1{
+/*Shadow for the header of the preview with a dark background, when you hover*/
+	box-shadow: -8px -8px 20px 4px #303030;
+}
+@media screen and (max-width: 650px) {
+/*Styles for devices with a screen size of less than 650px*/
+	.tab-title h1{
+	/*Styles have a header preview*/
+		white-space: nowrap;
+		padding: 17px 27px;
+		font-size: 18px;
+	}
+	.tab-name h1{
+	/*Styles title short description of the tabs below*/
+		padding: 5px 20px;
+		font-size: 20px;
+	}
+	.tab-title.tab-margin{
+	/*Width and height*/
+		width: 104%;
+		height: 102%;
+	}
+}
+#open-menu{
+/*Button styles to open tab links menu*/
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	left: 45px;
+	top: 45px;
+	border-radius: 100%;
+	text-align: center;
+	text-decoration: none;
+	background-color: #ADADE2;
+	z-index: 1000;
+	border: 5px solid transparent;
+}
+#open-menu i{
+/*Styles icons at the button for opening a menu of links to tabs*/
+	display: block;
+	position: absolute;
+	font-size: 22px;
+	left: 50%;
+	top: 50%;
+	color: #fff;
+	transform: translate(-50%,-50%);
+}
+#open-menu:active{
+/*The color of the frame when you press the button to open the menu links to tabs*/
+	border-color: #A7FFE3;
+}
+@keyframes bac{
+/*Zoom transitions*/
+	0%{}
+	50%{
+	/*Does not increase*/	
+		transform: translate(15px,0);
+	}
+	100%{
+	/*Increases*/
+		transform: translate(-15px,0);
+	}
+}
+.new-tab-wrapper:target,
+.button-tab-wrapper:target,
+.icon-tab-wrapper:target,
+.mob-tab-wrapper:target{
+/*Animation, the effect of increasing when choosing a tab from the menu*/
+	animation: bac .3s 4 ease-in-out alternate;
+}
+#menu{
+/*Menu styles with links to tabs*/
+	display: none;
+	position: fixed;
+	width: 410px;
+	height: 85%;
+	top: 50%;
+	left: 50%;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 5px solid #D5D5E2;
+	z-index: 1001;
+	overflow: hidden;
+	transform: translate(-50%, -50%);
+}
+#menu:target{
+/*Showing the menu with links to it*/
+	display: block;
+}
+#menu ul::-webkit-scrollbar{
+/*Scrolling in the menu*/
+	width: 5px;
+	height: 5px;
+	background-color: #DCFFF4;
+}
+#menu ul::-webkit-scrollbar-thumb{
+/*Background scroll slider in the menu*/
+	background-color: #D5D5E2;
+}
+#menu ul{
+/*Parent of the list of links to tabs in the menu*/
+	display: block;
+	width: 100%;
+	height: calc(100% - 42px);
+	box-sizing: border-box;
+	margin: 0;
+	padding: 20px 10px;
+	overflow: auto;
+}
+#menu li{
+/*Child elements of the list of links to tabs in the menu*/
+	display: block;
+	width: calc(90% + 20px);
+	box-sizing: border-box;
+	margin: 5px auto;		
+}
+#menu li:hover a{
+/*Content (when hovering) child elements of the list of links to tabs in the menu*/
+	text-decoration: underline;
+}		
+#menu li a{
+/*The contents of the child elements of the list of links to tabs in the menu*/
+	display: block;	
+	text-decoration: none;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 11px 20px 11px 120px;
+	color: #433D56;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 2px solid #D5D5E2;
+	border-radius: 3px;
+	position: relative;			
+}
+#menu li a:before{
+/*Approximate color scheme of tabs on the links in the menu*/
+	content: '';
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	box-sizing: border-box;
+	width: 100px;
+	height: 100%;
+	border-radius: 3px 0 0 3px;
+	background-color: #F7F7F7;
+}
+#menu li a[href="#ntwab"]:before,
+#menu li a[href="#itwwfab"]:before,
+#menu li a[href="#mtwab"]:before,
+#menu li a[href="#btwab"]:before{
+/*Background with gradient links to tabs with default background*/
+	background-image: linear-gradient(to right,rgb(102, 246, 255) 0%,rgb(221, 255, 244) 100%);
+}
+#menu li a[href="#ntwabo"]:before,
+#menu li a[href="#itwwfabo"]:before,
+#menu li a[href="#mtwabo"]:before,
+#menu li a[href="#btwabo"]:before,
+.er_two:before{
+/*Background with gradient links to tabs with background when selecting*/
+	background-image: radial-gradient(ellipse farthest-corner at left top,rgb(102, 246, 255) 1.1%,rgb(221, 255, 244) 65.8%,rgb(255, 255, 255) 100%);
+}
+#menu li a[href="#ntwdr"]:before,
+#menu li a[href="#itwwfdr"]:before,
+#menu li a[href="#mtwdr"]:before,
+#menu li a[href="#btwdr"]:before,
+.er_three:before{
+/*Background with gradient links on tabs with a dark red background.*/
+	background-image: linear-gradient(to right,rgb(110, 1, 1) 0%,rgb(255, 55, 55) 100%);
+}
+#menu li a[href="#ntwnb"]:before,
+#menu li a[href="#itwwfnb"]:before,
+#menu li a[href="#mtwnb"]:before,
+#menu li a[href="#btwnb"]:before,
+.er_four:before{
+/*Background with gradient links on tabs with dark blue background*/
+	background-image: linear-gradient(to right,rgb(24, 0, 161) 0%,rgb(90, 72, 255) 100%);
+}
+.er:before{
+/* Reset pseudo-element in menu items for external links */
+	display: none!important;
+}
+.er{
+/*Styles at menu items for external links*/
+	padding: 8px 0!important;
+	text-align: center;
+	font-size: 19px;
+}
+#menu h1{
+/*Menu title*/
+	text-align: center;
+	background-color: #DCFFF4;
+	margin: 0;
+	color: #433D56;
+	padding: 10px 20px;
+	font-size: 22px;			
+}
+#menu a span{
+/*Highlighting the color scheme of the links in the menu*/
+	font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+/*Styles for devices with a screen size of less than 600px*/
+	#menu{
+	/*Menu width*/
+		width: 90%;
+	}
+	#open-menu{
+	/*Positioning down for the menu open button*/
+		left: 15px;
+		top: calc(100% - 70px);
+	}
+}
+.tab-descriptions > article,
+.image,
+.image:before,
+.text{
+/*The default values for the "article" block, the picture and its containing text*/
+	display: block;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%;
+}
+.tab-descriptions > article,
+.image:before{
+/*Full height of the picture and the block "article"*/
+	height: 100%;
+}
+.tab-descriptions{
+/*Description block does not scroll*/
+	overflow: hidden;
+}
+.image{
+/*The image container does not scroll and takes 40% of the "article" block*/
+	height: 40%;
+	overflow: hidden;
+}
+.image:before{
+/*Picture Adaptability*/
+	content: '';
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.tab-content:nth-child(1) .image:before{
+/*Picture for the block "descriptions" 1 menu item*/
+	background-image: url('../../images/african.jpg');
+}
+.tab-content:nth-child(2) .image:before{
+/*Picture for the block "descriptions" 2 menu item*/
+	background-image: url('../../images/fantasy.jpg');
+}
+.tab-content:nth-child(3) .image:before{
+/*Picture for the block "descriptions" 3 menu item*/
+	background-image: url('../../images/fantasy-other.jpg');
+}
+.tab-content:nth-child(4) .image:before{
+/*Picture for the block "descriptions" 4 menu item*/
+	background-image: url('../../images/music.jpg');
+}
+.tab-content:nth-child(5) .image:before{
+/*Picture for the block "descriptions" 5 menu item*/
+	background-image: url('../../images/tea-time.jpg');
+}
+.text{
+/*Block "text" scrolls*/
+	width: 100%;
+	height: 60%;
+	overflow: auto;
+}
+.text > *{
+/*Color of elements in the "text" block*/
+	color: #5B616F;
+}
+.text > h1{
+/*Styles for level 1 headings in the "text" block*/
+	text-align: center;
+	color: #433D56;
+	font-size: 19px!important;
+	padding: 10px 15px;
+	margin: 0 0 10px 0;
+	box-sizing: border-box;
+	box-shadow: inset 0 0 30px #D5D5E2;
+}			
+.text > p{
+/*Paragraph styles in the "text" block*/
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin: 0 0 10px 0;
+}
+.mob-tab-wrapper .image{
+/*200px height on image container*/
+	height: 200px;
+}
+.navy-blue .text > h1,
+.dark-red .text > h1{
+/*The shadow of the headers in the block "text"*/
+	box-shadow: inset 0 0 30px #303030;
+}
+@media screen and (max-width: 650px) {
+/*Styles for devices with a screen size of less than 650px*/
+	.tab-descriptions{
+	/*The block of "descriptions" scrolls*/
+		overflow: auto;
+	}
+	.image{
+	/*The block "pictures" with a height of 180px*/
+		height: 180px;
+	}
+	.text{
+	/*Block "text" does not scroll*/
+		height: auto;
+		overflow: hidden;
+	}
+	.text > h1{
+	/*Reducing the font of the header in the "text" block*/
+		font-size: 18px!important;
+	}
+	.text > p{
+	/*Centering and Reducing the font of the paragraph in the block "text"*/
+		text-align: center;
+		font-size: 16px!important;
+	}
+}

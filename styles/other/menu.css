@@ -1,0 +1,191 @@
+#open-menu{
+/*Button styles to open tab links menu*/
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	left: 45px;
+	top: 45px;
+	border-radius: 100%;
+	text-align: center;
+	text-decoration: none;
+	background-color: #ADADE2;
+	z-index: 1000;
+	border: 5px solid transparent;
+}
+#open-menu i{
+/*Styles icons at the button for opening a menu of links to tabs*/
+	display: block;
+	position: absolute;
+	font-size: 22px;
+	left: 50%;
+	top: 50%;
+	color: #fff;
+	transform: translate(-50%,-50%);
+}
+#open-menu:active{
+/*The color of the frame when you press the button to open the menu links to tabs*/
+	border-color: #A7FFE3;
+}
+@keyframes bac{
+/*Zoom transitions*/
+	0%{}
+	50%{
+	/*Does not increase*/	
+		transform: translate(15px,0);
+	}
+	100%{
+	/*Increases*/
+		transform: translate(-15px,0);
+	}
+}
+.new-tab-wrapper:target,
+.button-tab-wrapper:target,
+.icon-tab-wrapper:target,
+.mob-tab-wrapper:target{
+/*Animation, the effect of increasing when choosing a tab from the menu*/
+	animation: bac .3s 4 ease-in-out alternate;
+}
+#menu{
+/*Menu styles with links to tabs*/
+	display: none;
+	position: fixed;
+	width: 410px;
+	height: 85%;
+	top: 50%;
+	left: 50%;
+	background-color: #fff;
+	border-radius: 5px;
+	border: 5px solid #D5D5E2;
+	z-index: 1001;
+	overflow: hidden;
+	transform: translate(-50%, -50%);
+}
+#menu:target{
+/*Showing the menu with links to it*/
+	display: block;
+}
+#menu ul::-webkit-scrollbar{
+/*Scrolling in the menu*/
+	width: 5px;
+	height: 5px;
+	background-color: #DCFFF4;
+}
+#menu ul::-webkit-scrollbar-thumb{
+/*Background scroll slider in the menu*/
+	background-color: #D5D5E2;
+}
+#menu ul{
+/*Parent of the list of links to tabs in the menu*/
+	display: block;
+	width: 100%;
+	height: calc(100% - 42px);
+	box-sizing: border-box;
+	margin: 0;
+	padding: 20px 10px;
+	overflow: auto;
+}
+#menu li{
+/*Child elements of the list of links to tabs in the menu*/
+	display: block;
+	width: calc(90% + 20px);
+	box-sizing: border-box;
+	margin: 5px auto;		
+}
+#menu li:hover a{
+/*Content (when hovering) child elements of the list of links to tabs in the menu*/
+	text-decoration: underline;
+}		
+#menu li a{
+/*The contents of the child elements of the list of links to tabs in the menu*/
+	display: block;	
+	text-decoration: none;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 11px 20px 11px 120px;
+	color: #433D56;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 2px solid #D5D5E2;
+	border-radius: 3px;
+	position: relative;			
+}
+#menu li a:before{
+/*Approximate color scheme of tabs on the links in the menu*/
+	content: '';
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+	box-sizing: border-box;
+	width: 100px;
+	height: 100%;
+	border-radius: 3px 0 0 3px;
+	background-color: #F7F7F7;
+}
+#menu li a[href="#ntwab"]:before,
+#menu li a[href="#itwwfab"]:before,
+#menu li a[href="#mtwab"]:before,
+#menu li a[href="#btwab"]:before{
+/*Background with gradient links to tabs with default background*/
+	background-image: linear-gradient(to right,rgb(102, 246, 255) 0%,rgb(221, 255, 244) 100%);
+}
+#menu li a[href="#ntwabo"]:before,
+#menu li a[href="#itwwfabo"]:before,
+#menu li a[href="#mtwabo"]:before,
+#menu li a[href="#btwabo"]:before,
+.er_two:before{
+/*Background with gradient links to tabs with background when selecting*/
+	background-image: radial-gradient(ellipse farthest-corner at left top,rgb(102, 246, 255) 1.1%,rgb(221, 255, 244) 65.8%,rgb(255, 255, 255) 100%);
+}
+#menu li a[href="#ntwdr"]:before,
+#menu li a[href="#itwwfdr"]:before,
+#menu li a[href="#mtwdr"]:before,
+#menu li a[href="#btwdr"]:before,
+.er_three:before{
+/*Background with gradient links on tabs with a dark red background.*/
+	background-image: linear-gradient(to right,rgb(110, 1, 1) 0%,rgb(255, 55, 55) 100%);
+}
+#menu li a[href="#ntwnb"]:before,
+#menu li a[href="#itwwfnb"]:before,
+#menu li a[href="#mtwnb"]:before,
+#menu li a[href="#btwnb"]:before,
+.er_four:before{
+/*Background with gradient links on tabs with dark blue background*/
+	background-image: linear-gradient(to right,rgb(24, 0, 161) 0%,rgb(90, 72, 255) 100%);
+}
+.er:before{
+/* Reset pseudo-element in menu items for external links */
+	display: none!important;
+}
+.er{
+/*Styles at menu items for external links*/
+	padding: 8px 0!important;
+	text-align: center;
+	font-size: 19px;
+}
+#menu h1{
+/*Menu title*/
+	text-align: center;
+	background-color: #DCFFF4;
+	margin: 0;
+	color: #433D56;
+	padding: 10px 20px;
+	font-size: 22px;			
+}
+#menu a span{
+/*Highlighting the color scheme of the links in the menu*/
+	font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+/*Styles for devices with a screen size of less than 600px*/
+	#menu{
+	/*Menu width*/
+		width: 90%;
+	}
+	#open-menu{
+	/*Positioning down for the menu open button*/
+		left: 15px;
+		top: calc(100% - 70px);
+	}
+}

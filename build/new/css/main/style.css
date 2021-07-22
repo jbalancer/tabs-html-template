@@ -1,0 +1,480 @@
+/*===========================================*/
+/*	  Setting the font and reset indents	 */
+/*===========================================*/
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+body{
+/*Setting the font on the entire document*/
+	font-family: 'Rubik', sans-serif;
+}
+body,
+.new-tab-wrapper .tab-titles *,
+.icon-tab-wrapper .tab-titles *,
+.button-tab-wrapper .tab-titles *,
+.mob-tab-wrapper .tab-titles *{
+/*Reset standard indents*/
+	margin: 0;
+	padding: 0;
+}
+.mob-tab-wrapper .tab-descriptions,
+.mob-tab-wrapper .tab-titles{
+/*Reset standard indents for column tabs*/
+	margin: 0;
+}
+/*===========================================*/
+/*Tabs display, hiding input and descriptions*/
+/*===========================================*/
+.tab-content,
+.new-tab-wrapper .tab-titles,
+.new-tab-wrapper,
+.icon-tab-wrapper,
+.icon-tab-wrapper .tab-titles,
+.mob-tab-wrapper .tab-titles,
+.icon-tab-wrapper .tab-titles:before,
+.mob-tab-wrapper,
+.mob-tab-wrapper .tab-titles:before,
+.mob-tab-wrapper .tab-titles:after,
+.button-tab-wrapper .tab-titles,
+.button-tab-wrapper{
+/*Setting the block display elements*/
+	display: block;
+}
+.tab-descriptions,
+.content-discoverer{
+/*Hiding input and unselected descriptions*/
+	display: none;
+}
+/*===========================================*/
+/*			  	Width of elements 	    	 */
+/*===========================================*/
+.new-tab-wrapper .tab-descriptions{
+/*Description block width*/
+	width: calc(100% - 200px);
+}
+.new-tab-wrapper .tab-titles,
+.button-tab-wrapper .tab-titles{
+/*Menu Header Width*/
+	width: 200px;
+}
+.new-tab-wrapper,
+.icon-tab-wrapper{
+/*Tab width with icons and standard tabs*/
+	width: 900px;
+}
+.icon-tab-wrapper .tab-descriptions,
+.mob-tab-wrapper .tab-descriptions,
+.mob-tab-wrapper .tab-titles{
+/*The width of the descriptions of the mobile, the standard tab and the header of the mobile tab*/
+	width: 100%;
+}
+.mob-tab-wrapper .tab-titles i,
+.mob-tab-wrapper .tab-titles:after{
+/*Width of pseudo-elements with background for icons*/
+	width: 70px;
+}
+.icon-tab-wrapper .tab-titles{
+/*Width of the menu title with a frame in tabs with icons*/
+	width: calc((100% / 5) + 2px);
+}
+.icon-tab-wrapper.with-frame .tab-content:first-child .tab-titles{
+/*Size 1 menu item in tabs with frame*/
+	width: calc(100% / 5);
+}
+.icon-tab-wrapper.without-frame .tab-titles{
+/*Width of the menu title without border in tabs with icons*/
+	width: calc(100% / 5);
+}
+.icon-tab-wrapper .tab-titles:before{
+/*Width of pointers in tabs with icons*/
+	width: 10px;
+}
+.mob-tab-wrapper,
+.new-tab-wrapper,
+.icon-tab-wrapper,
+.button-tab-wrapper{
+/*Maximum width of tabs*/
+	max-width: 90%;
+}
+.mob-tab-wrapper{
+/*Mobile Tab Width*/
+	width: 600px;	
+}
+.mob-tab-wrapper .tab-titles:before{
+/*The width of the "plus" mobile taba*/
+	width: 45px;
+}
+.button-tab-wrapper .tab-descriptions{
+/*Description block width in tabs with buttons*/
+	width: calc(100% - 215px);
+}
+.button-tab-wrapper{
+/*Tab width with buttons*/
+	width: 950px;
+}
+/*===========================================*/
+/*			  	Element height   	    	 */
+/*===========================================*/
+.new-tab-wrapper .tab-descriptions,
+.button-tab-wrapper .tab-descriptions{
+/*The height of the block descriptions of the standard and push-button tabs*/
+	height: 100%;	
+}
+.new-tab-wrapper .tab-titles{
+/*Maximum and minimum height of standard tabs*/
+	min-height: 46px;
+	max-height: auto;
+}
+.new-tab-wrapper,
+.icon-tab-wrapper,
+.button-tab-wrapper{
+/*Tab height: standard, push-button, with icons*/
+	height: 500px;
+}
+.icon-tab-wrapper .tab-descriptions{
+/*The height of the block descriptions tabs with icons*/
+	height: calc(100% - 68px);
+}
+.icon-tab-wrapper .tab-titles,
+.mob-tab-wrapper .tab-titles{
+/*Tab headers height with icons and mobile tabs*/
+	height: 70px;
+}
+.icon-tab-wrapper .tab-titles:before{
+/*The height of the pointer in tabs with icons*/
+	height: 10px;
+}
+.mob-tab-wrapper{
+/*Mobile Tab Height*/
+	height: auto;
+}
+.mob-tab-wrapper .tab-descriptions{
+/*Height of the block of descriptions of mobile tobacco*/
+	height: 0;
+	max-height: 300px;
+}
+.mob-tab-wrapper .tab-titles:before{
+/*The height of the "plus" in mobile tabs*/
+	height: 45px;
+}
+.button-tab-wrapper .tab-titles{
+/*Minimum and maximum height of the menu title in button tabs*/
+	min-height: 56px;
+	max-height: auto;
+}
+/*===========================================*/
+/*		Container size and text align 		 */
+/*===========================================*/
+.tab-descriptions,
+.tab-titles,
+.new-tab-wrapper,
+.icon-tab-wrapper,
+.mob-tab-wrapper,
+.tab-titles:before,
+.tab-titles i,
+.tab-titles:after,
+.button-tab-wrapper{
+/*The size is determined by the width and height and not the indents.*/
+	box-sizing: border-box;
+}
+.tab-titles{
+/*Center text in all menus*/
+	text-align: center;
+}
+/*===========================================*/
+/*				  Font size 				 */
+/*===========================================*/
+.new-tab-wrapper .tab-descriptions *,
+.button-tab-wrapper .tab-descriptions *,
+.button-tab-wrapper .tab-titles *,
+.new-tab-wrapper .tab-titles *{
+/*Font size in the description and menu items in button and standard tabs*/
+	font-size: 17px;
+}
+.icon-tab-wrapper .tab-titles *,
+.mob-tab-wrapper .tab-titles i{
+/*Size icons*/
+	font-size: 25px;
+}
+.mob-tab-wrapper .tab-titles:before{
+/*Font size plus in mobile tab*/
+	font-size: 18px;
+}
+.mob-tab-wrapper .tab-titles *{
+/*The font size of the contents of the menu in the mobile tab*/
+	font-size: 20px;
+}
+/*===========================================*/
+/*		External and internal indents 	 	 */
+/*===========================================*/
+.new-tab-wrapper,
+.icon-tab-wrapper,
+.mob-tab-wrapper,
+.button-tab-wrapper{
+/*Centering elements, indented from neighboring elements*/
+	margin: 50px auto; 
+}
+.new-tab-wrapper .tab-titles{
+/*Indentation to undo the wrapping of content with the frame of the parent and remove the upper outer indent*/
+	padding: 11px 20px;
+	margin-top: -2px;
+}
+.new-tab-wrapper .tab-content:first-child > .tab-titles,
+.mob-tab-wrapper > .tab-content:first-child > .tab-titles,
+.button-tab-wrapper .tab-content:first-child > .tab-titles{
+/*Remove the upper outer indent so that the element does not go beyond the frame*/
+	margin-top: 0;
+}
+.icon-tab-wrapper .tab-titles{
+/*Double frame indents*/
+	margin: 0 0 0 -2px;
+	padding-top: 20px;
+}
+.icon-tab-wrapper > .tab-content:first-child > .tab-titles{
+/*Remove left indent for the first menu item*/
+	margin-left: 0;
+}
+.mob-tab-wrapper .tab-titles{
+/*Strict upper outer indent*/
+	margin-top: 10px!important;		
+}
+.mob-tab-wrapper .tab-titles:before{
+/*Lower indentation to center content*/
+	padding-top: 7px;
+}
+.button-tab-wrapper .tab-titles{
+/*Button indentation for sticking and content centering*/
+	padding: 16px 20px!important;
+	margin-top: 8px;
+}
+/*===========================================*/
+/*				  Item type   		    	 */
+/*===========================================*/
+.new-tab-wrapper,
+.icon-tab-wrapper,
+.icon-tab-wrapper .tab-titles,
+.mob-tab-wrapper,
+.mob-tab-wrapper .tab-titles,
+.button-tab-wrapper{
+/*Positioning for children*/
+	position: relative;
+}
+.new-tab-wrapper .tab-descriptions,
+.icon-tab-wrapper .tab-descriptions,
+.icon-tab-wrapper .tab-titles:before,
+.mob-tab-wrapper .tab-descriptions,
+.mob-tab-wrapper .tab-titles:before,
+.mob-tab-wrapper .tab-titles i,
+.mob-tab-wrapper .tab-titles:after,
+.button-tab-wrapper .tab-descriptions{
+/*Absolute Positioning of the child relative to the parent*/
+	position: absolute;
+}
+/*===========================================*/
+/*    Distance for streamlined elements      */
+/*===========================================*/
+.new-tab-wrapper .tab-descriptions{
+/*Indent "description" to the left of the "menu items", to cancel wrapping*/
+	left: 198px;
+}
+.icon-tab-wrapper .tab-descriptions{
+/*Setting the position of the "description" down taba*/
+	bottom: 0;
+}
+.icon-tab-wrapper .tab-titles:before{
+/*Centering pointers for icon tabs*/
+	left: 50%;
+	top: -9%;
+}
+.new-tab-wrapper .tab-descriptions,
+.mob-tab-wrapper .tab-titles:after,
+.button-tab-wrapper .tab-descriptions{
+/*Clicking up the parent*/
+	top: 0;
+}
+.icon-tab-wrapper .tab-descriptions,
+.mob-tab-wrapper .tab-titles i,
+.mob-tab-wrapper .tab-titles:after{
+/*Clicking the elements to the left of the parent*/
+	left: 0;
+}
+.mob-tab-wrapper .tab-titles:before{
+/*Mobile background alignment*/
+	left: calc(100% - 55px);
+}
+.mob-tab-wrapper .tab-titles i,
+.mob-tab-wrapper .tab-titles:before{
+/*Alignment of the background and icons in the mobile tab*/
+	top: 50%;
+}
+.button-tab-wrapper .tab-descriptions{
+/*Retreat "description" of the buttons*/
+	left: 213px;
+}
+/*===========================================*/
+/*			Centering menu items         	 */
+/*===========================================*/
+.icon-tab-wrapper .tab-titles:before{
+/*Centering menu icons*/
+	transform: translate(-50%,9%);
+}
+.mob-tab-wrapper .tab-titles:before,
+.mob-tab-wrapper .tab-titles i{
+/*Alignment of heading elements - background and icons*/
+	transform: translate(0,-50%);
+}
+/*===========================================*/
+/*  Underline when hovering over menu items	 */
+/*===========================================*/
+.new-tab-wrapper .tab-titles:hover *,
+.button-tab-wrapper .tab-titles:hover *{
+/*Bottom underline of the title text when hovering*/
+    text-decoration: underline;
+}
+/*===========================================*/
+/*	    Transparency of tab elements 	     */
+/*===========================================*/
+.icon-tab-wrapper .tab-titles:before,
+.mob-tab-wrapper .tab-descriptions{
+/*Invisibility of elements before selecting a mobile tab and tab with icons*/
+	opacity: 0;
+}
+/*===========================================*/
+/*		   Type of menu item cursor      	 */
+/*===========================================*/
+.tab-titles{
+/*Pointer cursor for tabs menu*/
+	cursor: pointer;
+}
+/*===========================================*/
+/*		Setting frames and their rounding 	 */
+/*===========================================*/
+.icon-tab-wrapper .tab-titles:before{
+/*Assigning frames to the right and bottom for the menu background*/
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-right-width: 2px;
+	border-right-style: solid;
+}
+.mob-tab-wrapper .tab-descriptions{
+/*Strict removal of the top frame for tabs with icons*/
+	border-top: none!important;
+}
+.button-tab-wrapper .tab-descriptions{
+/*Strict frame removal for tabs with buttons*/
+	border: none!important;
+}
+.button-tab-wrapper .tab-titles{
+/*Strict purpose of rounding the frame for tabs with buttons*/
+	border-radius: 100px!important;
+}
+.icon-tab-wrapper.with-frame .tab-content:last-child .tab-titles{
+/*Reset rounding bottom right corner*/
+	border-radius: 3px 3px 0 0;
+}
+/*===========================================*/
+/*			    	 Layer     	     	     */
+/*===========================================*/
+.mob-tab-wrapper .tab-titles i{
+/*The topmost layer to overlap your background, which is set through the pseudo-element*/
+	z-index: 50;
+}
+.mob-tab-wrapper .tab-titles:after{
+/*The top layer to overlap your background, which is set by the parent to the full width*/
+	z-index: 5;
+}
+/*===========================================*/
+/*			 Pseudo-element content      	 */
+/*===========================================*/
+.icon-tab-wrapper .tab-titles:before,
+.mob-tab-wrapper .tab-titles:after{
+/*Empty content for tabs with icons and mobile tabs*/
+	content: '';
+}
+.mob-tab-wrapper .tab-titles:before{
+/*Icon "plus" in the mobile tab*/
+	content: '\271A';
+}
+/*===========================================*/
+/*			Wrapping letter-spacing     	 */
+/*===========================================*/
+.icon-tab-wrapper .tab-titles{
+/*Apply wrapping on the left for menu items with icons*/
+	float: left;
+	z-index: 10;
+}
+/*===========================================*/
+/*		 Styles when selecting tabs	 		 */
+/*===========================================*/
+.content-discoverer:checked ~ .tab-descriptions{
+/*Show description of selected title*/
+	display: block;
+}
+.new-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*Selecting the selected element by moving it to the right by 8px, so that the description does not blend with the menu item when increasing the element width*/
+	margin-left: -8px;
+	width: 208px;
+}
+.icon-tab-wrapper .content-discoverer:checked ~ .tab-titles:before{
+/*Arrow pointer on top of the selected header*/
+	opacity: 1;	
+	transform: translate(-50%,12%) rotate(45deg);
+	top: -12%;
+}
+.icon-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*The effect of clicking when choosing a title*/
+	height: 60px;
+	margin-top: 10px;
+	padding-top: 15px;
+}
+.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles:before{
+/*Show the minus to the right when selecting an item*/
+	content: '\2013';
+	border-color: transparent;
+	font-size: 20px;
+}
+.mob-tab-wrapper .content-discoverer:checked ~ .tab-descriptions{
+/*Show description of selected item*/
+	position: static;
+	height: auto;
+	opacity: 1;
+}
+/*===========================================*/
+/*Setting and resetting scrolling parameters */
+/*===========================================*/
+body::-webkit-scrollbar{
+/*Page scroll color*/
+	width: 5px;
+	height: 5px;
+	background-color: #F9F9FF;
+}
+body::-webkit-scrollbar-thumb{
+/*Page scroll slider color*/
+	background-color: #DDDDE7;
+}
+.tab-descriptions{
+/*Allow scrolling*/
+	overflow: auto;
+}
+.tab-descriptions::-webkit-scrollbar,
+.text::-webkit-scrollbar{
+/*Setting the width and height of the scroll slider*/
+	width: 5px;
+	height: 5px;
+}
+.tab-descriptions::-webkit-scrollbar-button,
+.text::-webkit-scrollbar-button{
+/*Hiding scroll arrows*/
+	width: 0;
+	height: 0;
+}
+/*===========================================*/
+/*	   			Smooth transition			 */
+/*===========================================*/
+.tab-titles,
+.tab-descriptions{
+/*Setting a smooth transition for menu items and descriptions*/
+	transition: 250ms all ease-in-out;
+}
+.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*Removing a smooth transition so that there are no bugs during reverse animation*/
+	transition: none;
+}

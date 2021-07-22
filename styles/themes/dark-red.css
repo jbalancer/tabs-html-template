@@ -1,0 +1,123 @@
+.dark-red > .tab-content > .tab-titles *{
+/*-- The font color of the contents of the menu header --*/
+
+	color: #F8CACA;
+}
+.dark-red > .tab-content > .tab-descriptions::-webkit-scrollbar,
+.dark-red .text::-webkit-scrollbar{
+/*-- Scroll background color for "description" blocks --*/
+
+	background-color: transparent;
+}
+.dark-red > .tab-content > .tab-descriptions::-webkit-scrollbar-thumb,
+.dark-red .text::-webkit-scrollbar-thumb{
+/*-- The color of the slider in the blocks "descriptions" --*/
+
+	background-color: #FF3737;
+}
+.dark-red > .tab-content > .tab-descriptions{
+/*-- Setting the scroll and background for the blocks "descriptions" --*/
+
+    overflow: auto;
+    background-color: #3D3D3D;
+}
+.dark-red > .tab-content > .tab-descriptions *{
+/*-- The shadow of the text and the font color of the contents of the blocks of "descriptions" --*/
+
+    text-shadow: 0 0 1px #F8CACA;
+    color: #fff;
+}
+.dark-red > .tab-content > .content-discoverer:checked ~ .tab-titles *{
+/*-- The font color of the contents of the menu title when selected --*/
+
+    color: #fff;
+}
+.dark-red > .tab-content > .content-discoverer:checked ~ .tab-titles{
+/*-- Background color, linear gradient of the menu header when selected --*/
+
+    background-color: #FF3737;
+    background-image: linear-gradient(to right,rgb(110, 1, 1) 0%,rgb(255, 55, 55) 100%);
+}
+.dark-red > .tab-content > .tab-titles{
+/*-- Default background color, reset external indents and set the internal upper indent for the menu title --*/
+
+    background-color: #303030;
+    margin: 0;
+    padding-top: 13px;
+}
+.dark-red.icon-tab-wrapper > .tab-content > .tab-titles:before{
+/*-- White background of the right and lower boundaries of pointers in tabs with icons --*/
+
+    border-bottom-color: #fff;
+    border-right-color: #fff; 
+}
+.dark-red.mob-tab-wrapper .tab-titles{
+/*-- Upper indent and background color for menu heading, in mobile tabs --*/
+
+    background-color: #3D3D3D;
+    padding-top: 23px;
+}
+.dark-red.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles:before{
+/*-- The color of the navigation elements "plus and minus" when selected in mobile tabs --*/
+
+    color: #fff;
+}
+.dark-red.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles:after{
+/*-- Reset the background rounding of icons when selecting, in mobile tabs --*/
+
+    border-radius: 0;
+}
+.dark-red.mob-tab-wrapper .tab-titles:before{
+/*-- Font color, frame, rounding, and background of the plus and minus navigation elements in mobile tabs --*/
+
+    color: #F8CACA;
+    border: 2px solid #303030;
+    border-radius: 0;
+    background-color: #303030;
+}
+.dark-red.mob-tab-wrapper .tab-titles:after{
+/*-- Right and bottom borders, background color and height of the background for icons, in mobile tabs --*/
+
+    border-right: 2px solid #303030;
+    border-bottom: 2px solid #303030;
+    background-color: #303030;
+    height: 100%;
+}
+.dark-red.mob-tab-wrapper .tab-descriptions{
+/*-- Reset rounding at the block of "descriptions" in mobile tabs --*/
+
+    border-radius: 0;
+}
+.dark-red.mob-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*-- Reset rounding at menu headers when selected, in mobile tabs --*/
+
+    border-radius: 0;
+}
+.dark-red.button-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*-- The effect of clicking with the shadow and the border color of the menu headers when selecting --*/
+
+    box-shadow: inset -2px 0 25px rgba(61,61,61,.4);
+    border-color: #fff;
+}
+.dark-red.button-tab-wrapper .tab-titles{
+/*-- Upper outer indent, shadow and borders of the menu title in button tabs --*/
+
+    margin-top: 8px;
+    box-shadow: 0 0 20px #3D3D3D;
+    border: 2px solid #DA8787;
+}
+.dark-red.icon-tab-wrapper > .tab-content > .tab-titles{
+/*-- Top indentation of the menu headings in tabs with icons --*/
+
+    padding-top: 21px;
+}
+.dark-red.icon-tab-wrapper .content-discoverer:checked ~ .tab-titles{
+/*-- Top indentation of menu headers when selected, in tabs with icons --*/
+
+    padding-top: 18px;
+}
+.icon-tab-wrapper .tab-titles:before{
+/*-- Background color of pointers for menu headings in tabs with icons --*/
+
+    background-color: #fff;
+}
